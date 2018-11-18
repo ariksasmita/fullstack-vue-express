@@ -23,6 +23,6 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // "process.env.port" is what node in Heroku / production will use, otherwise in local it will fallback to 5000
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
